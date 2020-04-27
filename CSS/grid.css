@@ -1,0 +1,79 @@
+:root{
+    --col-width:8.33333333%;
+}
+
+.gridContainer{
+    max-width: 900px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 5%;
+}
+
+.col-1{
+    width: calc(var(--col-width));
+}
+.col-2{
+    width: calc(var(--col-width)*2);
+}
+.col-3{
+    width: calc(var(--col-width)*3);
+}
+.col-4{
+    width: calc(var(--col-width)*4);
+}
+.col-5{
+    width: calc(var(--col-width)*5);
+}
+.col-6{
+    width:calc(var(--col-width)*6);
+}
+.col-7{
+    width: calc(var(--col-width)*7);
+}
+.col-8{
+    width: calc(var(--col-width)*8);
+}
+.col-9{
+    width: calc(var(--col-width)*9);
+}
+.col-10{
+    width: calc(var(--col-width)*10);
+}.col-11{
+    width: calc(var(--col-width)*11);
+}.col-12{
+    width: calc(var(--col-width)*12 );
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+    padding: 10px;
+}
+
+.product_image{
+    width: 35%;
+}
+
+.product_image img{
+    width: 200px;
+}
+
+
+
+
+@media (max-width:900px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+        width:100%;
+    }
+    .product_image {
+        order: 1;
+        text-align: center;
+    }
+}

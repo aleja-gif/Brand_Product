@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* variables */
+
+:root{
+     --green-color:#7ACC2D;
+     --white-color:white;
+     --black-color:#313337;
+     /* tipografia */
+     --normal:14px;
+     --h2:22px;
+     /* Espaciado */
+     --space:10px;
+     /* box shadow */
+     --box:0 0 2px 1px #c1bcbc
+}
+
+
+/* General Format */
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    margin: 10px;
+    font-size: var(--h2)
+}
+
+p, label{
+    font-size: var(--normal);
+}
+
+.main_button{
+    background-color:var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: 17px;
+    color: var(--white-color);
+    border: 0;
+}
+
+.main_button:hover{
+    background-color: #5e9e22;
+}
+
+
+/* Navbar */
+
+nav{ 
+    display: flex;
+    background-color: var(--green-color);
+    padding: var(--space);
+    color:var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex
+}
+
+nav li{
+    padding-left: 20px; 
+    list-style: none;
+}
+
+nav li a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: var(--white-color);
+}
+
+/* main section */
+
+.main_section{
+    padding: 10%;
+    text-align: center;
+}
+
+/* products section */
+
+.products{
+    background-image: url("../Assets/Images/curve.png");
+    height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 15% 20%;
+    display: flex;
+}
+
+.image_content{
+    text-align: center;
+}
+
+.product{
+    padding: var(--space);
+    margin-top: -240px;
+}
+.product .content{
+    background-color:var(--white-color);
+    padding: 15px;
+    box-shadow: var(--box);
+}
+
+/* features section */
+.features{
+    padding: 5% 20%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.feature__content img{
+    width: 150px;
+    height: 120px;
+
+}
+
+/* mentions section */
+.mentions{
+    padding: 5% 20%;
+    text-align: center;
+}
+
+.mentions h2{
+    padding: 5%;
+}
+
+.mention_container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mention__content{
+    box-shadow: var(--box);
+}
+
+.mention__content img{
+    width: 100%;
+}
+
+/* Payment Module */
+.payment_module{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+
+.payment_module_imgs{
+    max-width: 150px;
+    text-align: center;
+    margin: auto;
+}
+
+.verticalCenter{
+    padding: 5%;
+}
+
+.saleForm{
+     display: flex;
+     flex-direction: column;   
+}
+
+.payment_module_label{
+    margin: var(--space) 0;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+}
+
+.saleForm .main_button{
+    margin-top: 10px;
+}
+/* footer section */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    height: 100%; 
+    font-size: var(--normal);
+    background-color: var(--black-color);
+    padding: var(--space);
+    color: var(--white-color);
+}
+
+footer a{
+    color:var(--green-color);
+}
+
